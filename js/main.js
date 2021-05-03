@@ -68,8 +68,10 @@
 // Event delegation Practice
 const tabby = document.querySelector('.tabby')
 const tabList = tabby.querySelector('.tabs')
-const tabs = tabby.querySelectorAll('.tab')
-const tabContents = tabby.querySelectorAll('.tab-content')
+// const tabs = tabby.querySelectorAll('.tab')
+// const tabContents = tabby.querySelectorAll('.tab-content')
+const tabs = [...tabby.querySelectorAll('.tab')]
+const tabContents = [...tabby.querySelectorAll('.tab-content')]
 
 tabList.addEventListener('click', function(e){
   const tab = e.target
